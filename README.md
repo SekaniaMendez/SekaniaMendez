@@ -33,104 +33,81 @@ as much as designing experiences that spark curiosity.
 My approach: build for reality, design for wonder, and think about how each
 system will grow. The idea defines the tool.
 
-## Four worlds. One workshop.
+## Featured project
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://www.mendezsoftwagic.dev/work/topotools"><img src="./assets/projects/topotools-en.svg" alt="TopoTools — Geospatial automation" width="520"></a>
-      <p><img src="./assets/awards/emprende-mentes-2026-en.svg" alt="TopoTools — winner of Emprende Mentes 2026, organized by the Colegio de Ingenieros Topógrafos de Costa Rica (CIT–CFIA)" width="340"></p>
-      <p>From source plan to field-ready work. Automating surveying quotes, plan reading and georeferenced drafting.</p>
-      <p>
-        <img src="./assets/stack/python.svg" alt="Python" height="28">
-        <img src="./assets/stack/computer-vision.svg" alt="Computer Vision" height="28">
-        <img src="./assets/stack/postgresql.svg" alt="PostgreSQL" height="28">
-      </p>
-      <p><a href="https://www.mendezsoftwagic.dev/work/topotools"><strong>Explore TopoTools ↗</strong></a></p>
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://www.mendezsoftwagic.dev/work/atlas"><img src="./assets/projects/atlas-en.svg" alt="Atlas — Spatial intelligence" width="520"></a>
-      <p>Turning physical spaces into geometry. Combining LiDAR observations and GNSS anchors for spatial reconstruction.</p>
-      <p>
-        <img src="./assets/stack/cplusplus.svg" alt="C++" height="28">
-        <img src="./assets/stack/python.svg" alt="Python" height="28">
-        <img src="./assets/stack/lidar.svg" alt="LiDAR" height="28">
-        <img src="./assets/stack/gnss.svg" alt="GNSS" height="28">
-      </p>
-      <p><a href="https://www.mendezsoftwagic.dev/work/atlas"><strong>Explore Atlas ↗</strong></a></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://www.mendezsoftwagic.dev/work/umbra-caeli"><img src="./assets/projects/umbra-caeli-en.svg" alt="Umbra Caeli — Interactive worlds" width="520"></a>
-      <p>A world shaped by the player. An MMORPG connecting natal profiles, AI-powered abilities and souls-like progression.</p>
-      <p>
-        <img src="./assets/stack/unrealengine.svg" alt="Unreal Engine 5" height="28">
-        <img src="./assets/stack/cplusplus.svg" alt="C++" height="28">
-        <img src="./assets/stack/ai-systems.svg" alt="AI Systems" height="28">
-      </p>
-      <p><a href="https://www.mendezsoftwagic.dev/work/umbra-caeli"><strong>Explore Umbra Caeli ↗</strong></a></p>
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://www.mendezsoftwagic.dev/work/wedding-manager"><img src="./assets/projects/wedding-manager-en.svg" alt="Wedding Manager — Event experiences" width="520"></a>
-      <p>Every guest, every detail, connected. Digital invitations, personalized RSVP and guest coordination in one experience.</p>
-      <p>
-        <img src="./assets/stack/react.svg" alt="React" height="28">
-        <img src="./assets/stack/nodedotjs.svg" alt="Node.js" height="28">
-        <img src="./assets/stack/express.svg" alt="Express" height="28">
-        <img src="./assets/stack/mongodb.svg" alt="MongoDB" height="28">
-        <img src="./assets/stack/gsap.svg" alt="GSAP" height="28">
-      </p>
-      <p><a href="https://www.mendezsoftwagic.dev/work/wedding-manager"><strong>Explore Wedding Manager ↗</strong></a></p>
-    </td>
-  </tr>
-</table>
+<a href="https://www.mendezsoftwagic.dev/work/topotools"><img src="./assets/projects/topotools-featured-en.svg" alt="TopoTools — The surveying office, re-engineered" width="1040"></a>
+
+**In production · Geospatial automation**
+
+From source plan to field-ready work: one system connecting plan reading,
+quoting, drafting and georeferencing for surveying workflows.
+
+<p><img src="./assets/awards/emprende-mentes-2026-en.svg" alt="TopoTools — winner of Emprende Mentes 2026, organized by the Colegio de Ingenieros Topógrafos de Costa Rica (CIT–CFIA)" width="340"></p>
+
+### See it in action
+
+<a href="https://www.youtube.com/watch?v=xURthUWKitw"><img src="./assets/demos/topotools-ocr.jpg" alt="Open the Derrotero OCR demo on YouTube: video thumbnail showing a survey-plan table being read in TopoTools" width="1040"></a>
+
+**[▶ Watch the Derrotero OCR demo](https://www.youtube.com/watch?v=xURthUWKitw)** · Video in Spanish
+
+Read the plan → review and correct the data → continue in drafting, CAD or valuation.
+
+**Python · Computer Vision · PostgreSQL · Geospatial**
+
+[Explore the technical case study ↗](https://www.mendezsoftwagic.dev/work/topotools) · [Visit TopoTools ↗](https://www.topo-tools.com)
+
+## Other worlds from my workshop
+
+<a href="https://www.mendezsoftwagic.dev/work/atlas"><img src="./assets/projects/atlas-en.svg" alt="Atlas — Spatial intelligence" width="520"></a>
+
+<p><strong>Prototype</strong></p>
+<p>Turning physical spaces into geometry. Combining LiDAR observations and GNSS anchors for spatial reconstruction.</p>
+<p><a href="https://www.mendezsoftwagic.dev/work/atlas"><strong>Explore Atlas ↗</strong></a></p>
+
+<a href="https://www.mendezsoftwagic.dev/work/umbra-caeli"><img src="./assets/projects/umbra-caeli-en.svg" alt="Umbra Caeli — Interactive worlds" width="520"></a>
+
+<p><strong>In development</strong></p>
+<p>A world shaped by the player. An MMORPG connecting natal profiles, AI-powered abilities and souls-like progression.</p>
+<p><a href="https://www.mendezsoftwagic.dev/work/umbra-caeli"><strong>Explore Umbra Caeli ↗</strong></a></p>
+
+<a href="https://www.mendezsoftwagic.dev/work/wedding-manager"><img src="./assets/projects/wedding-manager-en.svg" alt="Wedding Manager — Event experiences" width="520"></a>
+
+<p><strong>Live event system</strong></p>
+<p>Every guest, every detail, connected. Digital invitations, personalized RSVP and guest coordination in one experience.</p>
+<p><a href="https://www.mendezsoftwagic.dev/work/wedding-manager"><strong>Explore Wedding Manager ↗</strong></a></p>
+
+## How I build
+
+- **TopoTools · Automation with review.** OCR produces editable data that can be compared with the original plan. Corrections are saved before continuing in drafting, CAD or valuation. [See the workflow ↗](https://www.topo-tools.com/modules/derrotero)
+- **Atlas · Build geometry and anchor it.** The prototype explores how to combine LiDAR observations with GNSS references to reconstruct environments and place them in the real world. ROS2 is a future exploration. [See the approach ↗](https://www.mendezsoftwagic.dev/work/atlas)
+- **Umbra Caeli · Turn identity into mechanics.** The game in development starts from each character's natal profile to explore AI-powered abilities and individual progression. [Explore the design ↗](https://www.mendezsoftwagic.dev/work/umbra-caeli)
+- **Wedding Manager · Connect experience and operations.** The public invitation connects to personalized token-based RSVP and a protected system for managing guests, capacity and confirmations. [See the system ↗](https://www.mendezsoftwagic.dev/work/wedding-manager)
+
+<details>
+<summary><strong>Behind the design: artwork generated with code</strong></summary>
+
+The banner's orbits, topographic contours, point cloud and constellations in
+this profile are drawn with Python and SVG. The animation keeps typography
+still and offers a static version for viewers who prefer reduced motion.
+
+- [Orbital banner generator](./scripts/render_banner.py)
+- [Project card and recognition generator](./scripts/render_projects.py)
+- [How to regenerate the assets](./assets/README.md)
+
+</details>
 
 ## Tools of the craft
 
-**Languages**
-
 <p>
-  <img src="./assets/stack/cplusplus.svg" alt="C++" height="44">
-  <img src="./assets/stack/python.svg" alt="Python" height="44">
-  <img src="./assets/stack/typescript.svg" alt="TypeScript" height="44">
-  <img src="./assets/stack/swift.svg" alt="Swift" height="44">
+  <img src="./assets/stack/cplusplus.svg" alt="C++" height="36">
+  <img src="./assets/stack/python.svg" alt="Python" height="36">
+  <img src="./assets/stack/typescript.svg" alt="TypeScript" height="36">
+  <img src="./assets/stack/swift.svg" alt="Swift" height="36">
 </p>
 
-**Applications, animation & interactive worlds**
-
-<p>
-  <img src="./assets/stack/react.svg" alt="React" height="44">
-  <img src="./assets/stack/nodedotjs.svg" alt="Node.js" height="44">
-  <img src="./assets/stack/express.svg" alt="Express" height="44">
-  <img src="./assets/stack/gsap.svg" alt="GSAP" height="44">
-  <img src="./assets/stack/unrealengine.svg" alt="Unreal Engine 5" height="44">
-</p>
-
-**Data & infrastructure**
-
-<p>
-  <img src="./assets/stack/postgresql.svg" alt="PostgreSQL" height="44">
-  <img src="./assets/stack/mongodb.svg" alt="MongoDB" height="44">
-  <img src="./assets/stack/docker.svg" alt="Docker" height="44">
-</p>
-
-**AI & spatial systems**
-
-<p>
-  <img src="./assets/stack/ai-systems.svg" alt="AI Systems" height="44">
-  <img src="./assets/stack/computer-vision.svg" alt="Computer Vision" height="44">
-  <img src="./assets/stack/lidar.svg" alt="LiDAR" height="44">
-  <img src="./assets/stack/gnss.svg" alt="GNSS" height="44">
-  <img src="./assets/stack/geospatial.svg" alt="Geospatial" height="44">
-  <img src="./assets/stack/procedural-design.svg" alt="Procedural Design" height="44">
-</p>
-
-**Exploring for the next stage of Atlas**
-
-<p>
-  <img src="./assets/stack/ros.svg" alt="ROS2 — future exploration for Atlas" height="44">
-</p>
+**Applications & worlds:** React · Node.js · Express · GSAP · Unreal Engine 5<br>
+**Data & infrastructure:** PostgreSQL · MongoDB · Docker<br>
+**AI & spatial systems:** computer vision · LiDAR · GNSS · procedural design
 
 ---
 

@@ -53,6 +53,29 @@ def illustration(slug, color):
 def main():
     directory = ASSETS / "projects"
     directory.mkdir(exist_ok=True)
+    for lang, label, subtitle in (
+        ("en", "FEATURED PROJECT / 01", "The surveying office, re-engineered."),
+        ("es", "PROYECTO DESTACADO / 01", "La oficina topográfica, reinventada."),
+    ):
+        svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="230" viewBox="0 0 1040 230" role="img" aria-label="TopoTools — {escape(subtitle)}">
+        <title>TopoTools — {escape(subtitle)}</title>
+        <defs>
+          <linearGradient id="featured-bg"><stop stop-color="#0c1119"/><stop offset="1" stop-color="#102823"/></linearGradient>
+          <clipPath id="featured-bounds"><rect width="1040" height="230" rx="14"/></clipPath>
+        </defs>
+        <g clip-path="url(#featured-bounds)">
+          <rect width="1040" height="230" fill="url(#featured-bg)"/>
+          <g transform="translate(290 -11) scale(1.4)">{illustration("topotools", "#78f8e4")}</g>
+          <path d="M36 0h130" stroke="#78f8e4" stroke-width="4"/>
+          <text x="36" y="43" fill="#78f8e4" font-family="Arial,Helvetica,sans-serif" font-size="14" letter-spacing="2">{label}</text>
+          <text x="33" y="123" fill="#f0f3f4" font-family="Arial,Helvetica,sans-serif" font-size="68" letter-spacing="-2">TopoTools</text>
+          <text x="36" y="172" fill="#b5c9cb" font-family="Arial,Helvetica,sans-serif" font-size="23">{escape(subtitle)}</text>
+          <path d="M36 202h38" stroke="#78f8e4"/>
+          <text x="87" y="207" fill="#83979f" font-family="Arial,Helvetica,sans-serif" font-size="11" letter-spacing="2">MENDEZSOFTWAGIC</text>
+        </g>
+        <rect x=".5" y=".5" width="1039" height="229" rx="14" fill="none" stroke="#2b4845"/>
+        </svg>'''
+        (directory / f"topotools-featured-{lang}.svg").write_text(svg, encoding="utf-8")
     for index, (slug, name, color, category_en, category_es) in enumerate(PROJECTS, 1):
         for lang, category in (("en", category_en), ("es", category_es)):
             svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="520" height="168" viewBox="0 0 520 168" role="img" aria-label="{escape(name)} — {escape(category)}">
@@ -107,7 +130,7 @@ def main():
         <text x="53" y="43" fill="#c6b58b" font-family="Arial,Helvetica,sans-serif" font-size="10" letter-spacing="1.2">{label}</text>
         </svg>'''
         (awards / f"emprende-mentes-2026-{lang}.svg").write_text(svg, encoding="utf-8")
-    print("Rendered 8 project headers, 4 language selectors and 2 award badges.")
+    print("Rendered 2 featured headers, 8 project headers, 4 language selectors and 2 award badges.")
 
 
 if __name__ == "__main__":
