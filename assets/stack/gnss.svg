@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="111" height="44" viewBox="0 0 111 44" role="img" aria-label="GNSS">
+    <title>GNSS</title>
+    <rect x=".5" y=".5" width="110" height="43" rx="9" fill="#0a1117" stroke="#28373e"/>
+    <g transform="translate(12 11) scale(.916667)" fill="none" stroke="#78f8e4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m9 3 5 5-6 6-5-5ZM14 8l4-4 3 3-4 4M8 14l-4 4 3 3 4-4M13 13l3 3m0-4a4 4 0 0 1-4 4m8-4a8 8 0 0 1-8 8"/></g>
+    <text x="44" y="27" fill="#dce7e7" font-family="Arial,Helvetica,sans-serif" font-size="13">GNSS</text>
+    </svg>

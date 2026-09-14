@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="193" height="44" viewBox="0 0 193 44" role="img" aria-label="Procedural Design">
+    <title>Procedural Design</title>
+    <rect x=".5" y=".5" width="192" height="43" rx="9" fill="#0a1117" stroke="#28373e"/>
+    <g transform="translate(12 11) scale(.916667)" fill="none" stroke="#78f8e4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 9 5-9 5-9-5Zm-9 10 9 5 9-5M3 17l9 5 9-5"/></g>
+    <text x="44" y="27" fill="#dce7e7" font-family="Arial,Helvetica,sans-serif" font-size="13">Procedural Design</text>
+    </svg>
