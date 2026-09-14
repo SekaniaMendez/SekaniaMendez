@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="168" viewBox="0 0 520 168" role="img" aria-label="TopoTools — GEOSPATIAL AUTOMATION">
+            <title>TopoTools — GEOSPATIAL AUTOMATION</title>
+            <defs>
+              <linearGradient id="bg"><stop stop-color="#0c1119"/><stop offset="1" stop-color="#111c26"/></linearGradient>
+              <linearGradient id="fade"><stop stop-color="#0c1119"/><stop offset="1" stop-color="#0c1119" stop-opacity="0"/></linearGradient>
+              <clipPath id="bounds"><rect width="520" height="168" rx="12"/></clipPath>
+            </defs>
+            <g clip-path="url(#bounds)">
+              <rect width="520" height="168" fill="url(#bg)"/>
+              <ellipse cx="433" cy="94" rx="20" ry="11" transform="rotate(-27 433 94)" fill="none" stroke="#78f8e4" stroke-opacity="0.55"/><ellipse cx="433" cy="94" rx="31" ry="18" transform="rotate(-27 433 94)" fill="none" stroke="#78f8e4" stroke-opacity="0.5"/><ellipse cx="433" cy="94" rx="42" ry="25" transform="rotate(-27 433 94)" fill="none" stroke="#78f8e4" stroke-opacity="0.45000000000000007"/><ellipse cx="433" cy="94" rx="53" ry="32" transform="rotate(-27 433 94)" fill="none" stroke="#78f8e4" stroke-opacity="0.4"/><ellipse cx="433" cy="94" rx="64" ry="39" transform="rotate(-27 433 94)" fill="none" stroke="#78f8e4" stroke-opacity="0.35000000000000003"/><ellipse cx="433" cy="94" rx="75" ry="46" transform="rotate(-27 433 94)" fill="none" stroke="#78f8e4" stroke-opacity="0.30000000000000004"/><ellipse cx="433" cy="94" rx="86" ry="53" transform="rotate(-27 433 94)" fill="none" stroke="#78f8e4" stroke-opacity="0.25"/><ellipse cx="433" cy="94" rx="97" ry="60" transform="rotate(-27 433 94)" fill="none" stroke="#78f8e4" stroke-opacity="0.2"/><path d="M405 87h20m-10-10v20" stroke="#78f8e4"/><circle cx="415" cy="87" r="3" fill="#78f8e4"/>
+              <rect x="300" width="90" height="168" fill="url(#fade)"/>
+              <path d="M25 0h88" stroke="#78f8e4" stroke-width="3"/>
+              <text x="26" y="39" fill="#78f8e4" font-family="Arial,Helvetica,sans-serif" font-size="10" letter-spacing="1.5">01 / GEOSPATIAL AUTOMATION</text>
+              <text x="25" y="94" fill="#f0f3f4" font-family="Arial,Helvetica,sans-serif" font-size="35" letter-spacing="-1">TopoTools</text>
+              <path d="M27 127h28" stroke="#78f8e4" stroke-opacity=".7"/>
+              <text x="66" y="131" fill="#83979f" font-family="Arial,Helvetica,sans-serif" font-size="10" letter-spacing="1.8">MENDEZSOFTWAGIC</text>
+            </g>
+            <rect x=".5" y=".5" width="519" height="167" rx="12" fill="none" stroke="#2b3845"/>
+            </svg>

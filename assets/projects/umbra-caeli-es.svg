@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="168" viewBox="0 0 520 168" role="img" aria-label="Umbra Caeli — MUNDOS INTERACTIVOS">
+            <title>Umbra Caeli — MUNDOS INTERACTIVOS</title>
+            <defs>
+              <linearGradient id="bg"><stop stop-color="#0c1119"/><stop offset="1" stop-color="#111c26"/></linearGradient>
+              <linearGradient id="fade"><stop stop-color="#0c1119"/><stop offset="1" stop-color="#0c1119" stop-opacity="0"/></linearGradient>
+              <clipPath id="bounds"><rect width="520" height="168" rx="12"/></clipPath>
+            </defs>
+            <g clip-path="url(#bounds)">
+              <rect width="520" height="168" fill="url(#bg)"/>
+              <circle cx="431" cy="89" r="59" fill="none" stroke="#b49bff" stroke-opacity=".18"/><circle cx="431" cy="89" r="48" fill="none" stroke="#b49bff" stroke-opacity=".13" stroke-dasharray="2 7"/><polyline points="388,106 412,61 437,97 470,63 456,126" fill="none" stroke="#b49bff" stroke-opacity=".55"/><circle cx="388" cy="106" r="6" fill="#b49bff" opacity=".09"/><circle cx="388" cy="106" r="2.2" fill="#b49bff"/><circle cx="412" cy="61" r="6" fill="#b49bff" opacity=".09"/><circle cx="412" cy="61" r="2.2" fill="#b49bff"/><circle cx="437" cy="97" r="6" fill="#b49bff" opacity=".09"/><circle cx="437" cy="97" r="2.2" fill="#b49bff"/><circle cx="470" cy="63" r="6" fill="#b49bff" opacity=".09"/><circle cx="470" cy="63" r="2.2" fill="#b49bff"/><circle cx="456" cy="126" r="6" fill="#b49bff" opacity=".09"/><circle cx="456" cy="126" r="2.2" fill="#b49bff"/>
+              <rect x="300" width="90" height="168" fill="url(#fade)"/>
+              <path d="M25 0h88" stroke="#b49bff" stroke-width="3"/>
+              <text x="26" y="39" fill="#b49bff" font-family="Arial,Helvetica,sans-serif" font-size="10" letter-spacing="1.5">03 / MUNDOS INTERACTIVOS</text>
+              <text x="25" y="94" fill="#f0f3f4" font-family="Arial,Helvetica,sans-serif" font-size="35" letter-spacing="-1">Umbra Caeli</text>
+              <path d="M27 127h28" stroke="#b49bff" stroke-opacity=".7"/>
+              <text x="66" y="131" fill="#83979f" font-family="Arial,Helvetica,sans-serif" font-size="10" letter-spacing="1.8">MENDEZSOFTWAGIC</text>
+            </g>
+            <rect x=".5" y=".5" width="519" height="167" rx="12" fill="none" stroke="#2b3845"/>
+            </svg>

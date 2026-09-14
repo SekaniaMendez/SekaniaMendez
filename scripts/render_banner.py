@@ -7,6 +7,7 @@ All frames are drawn from vector geometry; no external image service is used.
 """
 
 from concurrent.futures import ThreadPoolExecutor
+import argparse
 from functools import lru_cache
 from html import escape
 from math import cos, pi, sin
@@ -23,6 +24,24 @@ ASSETS = ROOT / "assets"
 WIDTH, HEIGHT = 1200, 400
 FPS, SECONDS = 20, 12
 CYAN, VIOLET = "#78f8e4", "#a991ff"
+COPY = {
+    "en": {
+        "title": "MendezSoftwagic — software, with a little magic",
+        "description": "Mint and violet orbital paths surround a geometric M on a dark star field. Software developer and UCR / ECCI student, Costa Rica.",
+        "role": "SOFTWARE DEVELOPER · UCR / ECCI STUDENT",
+        "tagline": "Software, with a little magic.",
+        "fields": "AI ENGINEERING  /  SPATIAL SYSTEMS  /  INTERACTIVE WORLDS",
+        "location": "BUILT IN COSTA RICA",
+    },
+    "es": {
+        "title": "MendezSoftwagic — software, con un toque de magia",
+        "description": "Órbitas cian y violeta rodean una M geométrica sobre un cielo oscuro. Desarrollador y estudiante de la UCR / ECCI, Costa Rica.",
+        "role": "DESARROLLADOR · ESTUDIANTE UCR / ECCI",
+        "tagline": "Software, con un toque de magia.",
+        "fields": "INTELIGENCIA ARTIFICIAL  /  SISTEMAS ESPACIALES  /  MUNDOS INTERACTIVOS",
+        "location": "CREADO EN COSTA RICA",
+    },
+}
 
 
 @lru_cache(maxsize=3)
@@ -31,11 +50,12 @@ def technology_icon(slug):
     return "".join(f'<path d="{escape(node.attrib["d"], quote=True)}"/>' for node in root.iter() if node.tag.rsplit("}", 1)[-1] == "path")
 
 
-def artwork(phase=0):
+def artwork(phase=0, lang="en"):
     """A phase of 0 and 1 produces identical geometry and brightness."""
+    copy = COPY[lang]
     parts = [f'''<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}">
-    <title>MendezSoftwagic — software, with a little magic</title>
-    <desc>Mint and violet orbital paths surround a geometric M on a dark star field. Independent software engineering, built in Costa Rica.</desc>
+    <title>{copy['title']}</title>
+    <desc>{copy['description']}</desc>
     <defs>
       <radialGradient id="space" cx="79%" cy="43%" r="76%">
         <stop stop-color="#112226"/><stop offset=".48" stop-color="#090e15"/><stop offset="1" stop-color="#05070a"/>
@@ -58,15 +78,15 @@ def artwork(phase=0):
         parts.append(f'<circle cx="{x:.3f}" cy="{y:.3f}" r="{radius}" fill="#b4d6da" opacity="{opacity:.4f}"/>')
 
     # Editorial typography stays still throughout the loop.
-    parts.append('''
+    parts.append(f'''
     <g font-family="Arial, Helvetica, sans-serif">
       <path d="M64 55h18m-9-9v18" stroke="#78f8e4" stroke-width="1.5"/>
-      <text x="97" y="60" fill="#b3c7c5" font-size="12" letter-spacing="2.3">SOFTWARE DEVELOPER · UCR / ECCI STUDENT</text>
+      <text x="97" y="60" fill="#b3c7c5" font-size="12" letter-spacing="2.3">{copy['role']}</text>
       <text x="62" y="150" fill="#f2f3ed" font-size="61" letter-spacing="-2.5">Mendez<tspan fill="#78f8e4">Softwagic</tspan></text>
-      <text x="64" y="206" fill="#d3d8e2" font-family="Georgia, serif" font-style="italic" font-size="30">Software, with a little magic.</text>
-      <text x="65" y="266" fill="#91a5ad" font-size="12" letter-spacing="1.6">AI ENGINEERING  /  SPATIAL SYSTEMS  /  INTERACTIVE WORLDS</text>
+      <text x="64" y="206" fill="#d3d8e2" font-family="Georgia, serif" font-style="italic" font-size="30">{copy['tagline']}</text>
+      <text x="65" y="266" fill="#91a5ad" font-size="{11 if lang == 'es' else 12}" letter-spacing="{.8 if lang == 'es' else 1.6}">{copy['fields']}</text>
       <circle cx="69" cy="363" r="3" fill="#78f8e4"/>
-      <text x="83" y="367" fill="#9dafb2" font-size="12" letter-spacing="1.6">BUILT IN COSTA RICA</text>
+      <text x="83" y="367" fill="#9dafb2" font-size="12" letter-spacing="1.6">{copy['location']}</text>
       <text x="1136" y="367" fill="#b0c5c7" text-anchor="end" font-size="13" letter-spacing="1">mendezsoftwagic.dev ↗</text>
     </g>
     <g transform="translate(948 180)">
@@ -107,13 +127,17 @@ def artwork(phase=0):
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--lang", choices=COPY, default="en")
+    args = parser.parse_args()
+    stem = "banner" if args.lang == "en" else "banner-es"
     for executable in ("rsvg-convert", "ffmpeg"):
         if not shutil.which(executable):
             raise SystemExit(f"Missing dependency: {executable}. See assets/README.md.")
     ASSETS.mkdir(exist_ok=True)
-    svg = artwork()
-    (ASSETS / "banner.svg").write_text(svg, encoding="utf-8")
-    subprocess.run(["rsvg-convert", "-o", str(ASSETS / "banner.png")], input=svg.encode(), check=True)
+    svg = artwork(lang=args.lang)
+    (ASSETS / f"{stem}.svg").write_text(svg, encoding="utf-8")
+    subprocess.run(["rsvg-convert", "-o", str(ASSETS / f"{stem}.png")], input=svg.encode(), check=True)
 
     with tempfile.TemporaryDirectory(prefix="mendez-banner-") as scratch:
         frames = Path(scratch)
@@ -121,7 +145,7 @@ def main():
         def render(index):
             subprocess.run([
                 "rsvg-convert", "-o", str(frames / f"{index:04d}.png")
-            ], input=artwork(index / (FPS * SECONDS)).encode(), check=True)
+            ], input=artwork(index / (FPS * SECONDS), args.lang).encode(), check=True)
 
         with ThreadPoolExecutor(max_workers=4) as pool:
             list(pool.map(render, range(FPS * SECONDS)))
@@ -130,10 +154,11 @@ def main():
             "-framerate", str(FPS), "-i", str(frames / "%04d.png"),
             "-filter_complex",
             "split[a][b];[a]palettegen=stats_mode=full:max_colors=128[p];[b][p]paletteuse=dither=none:diff_mode=rectangle",
-            "-loop", "0", str(ASSETS / "banner.gif")
+            "-loop", "0", str(ASSETS / f"{stem}.gif")
         ], check=True)
     print(f"Rendered {FPS * SECONDS} frames; {SECONDS}s seamless loop.")
-    print(f"GIF: {ASSETS / 'banner.gif'} ({(ASSETS / 'banner.gif').stat().st_size / 1024 / 1024:.2f} MiB)")
+    output = ASSETS / f"{stem}.gif"
+    print(f"GIF: {output} ({output.stat().st_size / 1024 / 1024:.2f} MiB)")
 
 
 if __name__ == "__main__":

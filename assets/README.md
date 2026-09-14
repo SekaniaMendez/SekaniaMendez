@@ -5,9 +5,10 @@ portfolio's night, cyan and violet palette, with a new geometric monogram and
 tilted orbital planes. The typography remains stationary while C++, Python and React icons
 travel along the orbits and the background stars gently change brightness.
 
-- `banner.gif`: README animation, 1200 × 400, 20 fps, seamless 12-second loop.
+- `banner.gif`: English README animation, 1200 × 400, 20 fps, seamless 12-second loop.
 - `banner.png`: still image for reduced-motion viewers and previews.
 - `banner.svg`: editable, static vector artwork of the first frame.
+- `banner-es.gif`, `banner-es.png`, `banner-es.svg`: Spanish counterparts.
 
 The profile uses a `<picture>` element to select the PNG when the viewer's
 browser requests reduced motion, with the GIF as its default image. All artwork
@@ -20,6 +21,7 @@ Install Python 3, librsvg (`rsvg-convert`) and FFmpeg. On macOS with Homebrew:
 ```sh
 brew install librsvg ffmpeg
 python3 scripts/render_banner.py
+python3 scripts/render_banner.py --lang es
 ```
 
 The generator uses only the Python standard library. It overwrites the three
@@ -36,6 +38,9 @@ Their CC0 license is included in `icons/LICENSE.md`; brand rights remain with
 their respective owners. `stack/` contains locally generated icon-and-label badges.
 The pictograms for AI, computer vision, LiDAR, GNSS, geospatial systems and
 procedural design are original line drawings representing fields, not brand logos.
+
+`ucr-student-en.svg` is the English version of the student card.
+The university's proper name remains unchanged in its official signature.
 
 `ucr.svg` is the unchanged official university signature from
 [Universidad de Costa Rica](https://www.ucr.ac.cr/vistas/webucr_ucr_7/imagenes/firma-ucr-c.svg),
@@ -58,3 +63,26 @@ python3 scripts/render_stack.py
 To re-fetch the exact pinned icon sources, use `--download-icons`. This also
 requires `curl` and network access. The downloaded icon SVGs are inputs for both
 generators; regenerate the banner after changing them.
+
+## Languages and project cards
+
+`README.md` is the default English profile. `README.es.md` is its Spanish
+translation. The language buttons link to these Markdown files; they do not
+execute JavaScript, automatically detect a language, or persist a preference.
+Switching languages opens the other README within the repository.
+
+`projects/` contains eight SVG headers (four projects, two languages).
+Topographic contours, a point cloud, a constellation and interlocking rings
+distinguish the projects. Descriptions and project links remain native HTML
+inside a two-column table, so they are selectable and readable by assistive
+technology. `languages/` contains the active and available language buttons.
+GitHub controls the table layout, including horizontal scrolling on narrow screens.
+
+Regenerate these lightweight vector assets offline:
+
+```sh
+python3 scripts/render_projects.py
+```
+
+When editing project copy, update both README files. Technology icons are shared
+between languages; the project headers, student label and banner copy are localized.

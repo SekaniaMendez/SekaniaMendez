@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="168" viewBox="0 0 520 168" role="img" aria-label="Wedding Manager — EXPERIENCIAS Y EVENTOS">
+            <title>Wedding Manager — EXPERIENCIAS Y EVENTOS</title>
+            <defs>
+              <linearGradient id="bg"><stop stop-color="#0c1119"/><stop offset="1" stop-color="#111c26"/></linearGradient>
+              <linearGradient id="fade"><stop stop-color="#0c1119"/><stop offset="1" stop-color="#0c1119" stop-opacity="0"/></linearGradient>
+              <clipPath id="bounds"><rect width="520" height="168" rx="12"/></clipPath>
+            </defs>
+            <g clip-path="url(#bounds)">
+              <rect width="520" height="168" fill="url(#bg)"/>
+              <g transform="rotate(-18 431 87)"><ellipse cx="413" cy="87" rx="30" ry="39" fill="none" stroke="#f1becf" stroke-width="1.6" stroke-opacity=".65"/><ellipse cx="449" cy="87" rx="30" ry="39" fill="none" stroke="#f1becf" stroke-width="1.6" stroke-opacity=".4"/></g><circle cx="496.00" cy="87.00" r="1" fill="#f1becf" opacity=".35"/><circle cx="491.05" cy="109.96" r="1" fill="#f1becf" opacity=".35"/><circle cx="476.96" cy="129.43" r="1" fill="#f1becf" opacity=".35"/><circle cx="455.88" cy="142.43" r="1" fill="#f1becf" opacity=".35"/><circle cx="431.00" cy="147.00" r="1" fill="#f1becf" opacity=".35"/><circle cx="406.13" cy="142.43" r="1" fill="#f1becf" opacity=".35"/><circle cx="385.04" cy="129.43" r="1" fill="#f1becf" opacity=".35"/><circle cx="370.95" cy="109.97" r="1" fill="#f1becf" opacity=".35"/><circle cx="366.00" cy="87.01" r="1" fill="#f1becf" opacity=".35"/><circle cx="370.95" cy="64.04" r="1" fill="#f1becf" opacity=".35"/><circle cx="385.03" cy="44.58" r="1" fill="#f1becf" opacity=".35"/><circle cx="406.12" cy="31.57" r="1" fill="#f1becf" opacity=".35"/><circle cx="430.99" cy="27.00" r="1" fill="#f1becf" opacity=".35"/><circle cx="455.87" cy="31.56" r="1" fill="#f1becf" opacity=".35"/><circle cx="476.95" cy="44.57" r="1" fill="#f1becf" opacity=".35"/><circle cx="491.05" cy="64.03" r="1" fill="#f1becf" opacity=".35"/><path d="M431 18v12m-6-6h12" stroke="#f1becf"/>
+              <rect x="300" width="90" height="168" fill="url(#fade)"/>
+              <path d="M25 0h88" stroke="#f1becf" stroke-width="3"/>
+              <text x="26" y="39" fill="#f1becf" font-family="Arial,Helvetica,sans-serif" font-size="10" letter-spacing="1.5">04 / EXPERIENCIAS Y EVENTOS</text>
+              <text x="25" y="94" fill="#f0f3f4" font-family="Arial,Helvetica,sans-serif" font-size="31" letter-spacing="-1">Wedding Manager</text>
+              <path d="M27 127h28" stroke="#f1becf" stroke-opacity=".7"/>
+              <text x="66" y="131" fill="#83979f" font-family="Arial,Helvetica,sans-serif" font-size="10" letter-spacing="1.8">MENDEZSOFTWAGIC</text>
+            </g>
+            <rect x=".5" y=".5" width="519" height="167" rx="12" fill="none" stroke="#2b3845"/>
+            </svg>

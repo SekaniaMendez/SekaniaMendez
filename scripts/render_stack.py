@@ -102,6 +102,10 @@ def main():
     <text x="436" y="86" fill="#526774" font-family="Arial,Helvetica,sans-serif" font-size="11" text-anchor="end">UCR · COSTA RICA</text>
     </svg>'''
     (ASSETS / "ucr-student.svg").write_text(university, encoding="utf-8")
+    university_en = university.replace(
+        "Estudiante de la ECCI, Universidad de Costa Rica", "ECCI student, University of Costa Rica"
+    ).replace("ESTUDIANTE · ECCI", "STUDENT · ECCI")
+    (ASSETS / "ucr-student-en.svg").write_text(university_en, encoding="utf-8")
     print(f"Rendered {len(TECHNOLOGIES) + len(FIELDS)} local technology badges.")
 
 
