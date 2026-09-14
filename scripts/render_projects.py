@@ -90,7 +90,24 @@ def main():
             <text x="46" y="23" fill="{color}" font-family="Arial,Helvetica,sans-serif" font-size="13">{label}</text>
             </svg>'''
             (languages / f"{lang}-{state}.svg").write_text(svg, encoding="utf-8")
-    print("Rendered 8 project headers and 4 language selectors.")
+    awards = ASSETS / "awards"
+    awards.mkdir(exist_ok=True)
+    for lang, title, label in (
+        ("en", "TopoTools — Emprende Mentes 2026 winner, CIT–CFIA", "WINNER · CIT–CFIA"),
+        ("es", "TopoTools — ganador de Emprende Mentes 2026, CIT–CFIA", "GANADOR · CIT–CFIA"),
+    ):
+        svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="340" height="58" viewBox="0 0 340 58" role="img" aria-label="{title}">
+        <title>{title}</title>
+        <rect x=".5" y=".5" width="339" height="57" rx="9" fill="#201c12" stroke="#756237"/>
+        <g transform="translate(14 15)" fill="none" stroke="#edce83" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M7 3h10v5a5 5 0 0 1-10 0V3Z"/>
+          <path d="M7 5H4v2a4 4 0 0 0 4 4m9-6h3v2a4 4 0 0 1-4 4m-4 2v5m-4 3h8m-6-3h4l1 3H9l1-3Z"/>
+        </g>
+        <text x="53" y="25" fill="#f3dcab" font-family="Arial,Helvetica,sans-serif" font-weight="bold" font-size="13" letter-spacing=".8">EMPRENDE MENTES 2026</text>
+        <text x="53" y="43" fill="#c6b58b" font-family="Arial,Helvetica,sans-serif" font-size="10" letter-spacing="1.2">{label}</text>
+        </svg>'''
+        (awards / f"emprende-mentes-2026-{lang}.svg").write_text(svg, encoding="utf-8")
+    print("Rendered 8 project headers, 4 language selectors and 2 award badges.")
 
 
 if __name__ == "__main__":

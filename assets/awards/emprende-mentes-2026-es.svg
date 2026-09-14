@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="58" viewBox="0 0 340 58" role="img" aria-label="TopoTools — ganador de Emprende Mentes 2026, CIT–CFIA">
+        <title>TopoTools — ganador de Emprende Mentes 2026, CIT–CFIA</title>
+        <rect x=".5" y=".5" width="339" height="57" rx="9" fill="#201c12" stroke="#756237"/>
+        <g transform="translate(14 15)" fill="none" stroke="#edce83" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M7 3h10v5a5 5 0 0 1-10 0V3Z"/>
+          <path d="M7 5H4v2a4 4 0 0 0 4 4m9-6h3v2a4 4 0 0 1-4 4m-4 2v5m-4 3h8m-6-3h4l1 3H9l1-3Z"/>
+        </g>
+        <text x="53" y="25" fill="#f3dcab" font-family="Arial,Helvetica,sans-serif" font-weight="bold" font-size="13" letter-spacing=".8">EMPRENDE MENTES 2026</text>
+        <text x="53" y="43" fill="#c6b58b" font-family="Arial,Helvetica,sans-serif" font-size="10" letter-spacing="1.2">GANADOR · CIT–CFIA</text>
+        </svg>

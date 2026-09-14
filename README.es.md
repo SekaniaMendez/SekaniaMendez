@@ -39,6 +39,7 @@ crecerá cada sistema. La idea define la herramienta.
   <tr>
     <td width="50%" valign="top">
       <a href="https://www.mendezsoftwagic.dev/work/topotools"><img src="./assets/projects/topotools-es.svg" alt="TopoTools — Automatización geoespacial" width="520"></a>
+      <p><img src="./assets/awards/emprende-mentes-2026-es.svg" alt="TopoTools — ganador de Emprende Mentes 2026, organizado por el Colegio de Ingenieros Topógrafos de Costa Rica (CIT–CFIA)" width="340"></p>
       <p>Del plano al trabajo de campo. Automatización de cotizaciones topográficas, lectura de planos y dibujo georreferenciado.</p>
       <p>
         <img src="./assets/stack/python.svg" alt="Python" height="28">

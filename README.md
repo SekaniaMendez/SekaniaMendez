@@ -39,6 +39,7 @@ system will grow. The idea defines the tool.
   <tr>
     <td width="50%" valign="top">
       <a href="https://www.mendezsoftwagic.dev/work/topotools"><img src="./assets/projects/topotools-en.svg" alt="TopoTools — Geospatial automation" width="520"></a>
+      <p><img src="./assets/awards/emprende-mentes-2026-en.svg" alt="TopoTools — winner of Emprende Mentes 2026, organized by the Colegio de Ingenieros Topógrafos de Costa Rica (CIT–CFIA)" width="340"></p>
       <p>From source plan to field-ready work. Automating surveying quotes, plan reading and georeferenced drafting.</p>
       <p>
         <img src="./assets/stack/python.svg" alt="Python" height="28">
